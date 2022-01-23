@@ -1,0 +1,19 @@
+Function TEXT_COUNT_WORDS(Rng As Range) As Integer
+TEXT_COUNT_WORDS = UBound(Split(Rng.Value, " "), 1) + 1
+End Function
+
+
+Sub Macro_ChangeReferencetoR1C1(control As IRibbonControl, Pressed As Boolean)
+
+On Error Resume Next
+If Application.ReferenceStyle = xlR1C1 Then
+Application.ReferenceStyle = xlA1
+Else
+Application.ReferenceStyle = xlR1C1
+End If
+
+End Sub
+
+Sub Go_To_Website(control As IRibbonControl)
+ActiveWorkbook.FollowHyperlink Address:="https://www.havishmconsulting.com", NewWindow:=True
+End Sub

@@ -1,0 +1,12 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+	<ribbon>
+		<tabs>
+			<tab id="customTab" label="Custom Ribbon" insertAfterMso="TabHome">
+                    <group id="customGroup" label="Change Reference">
+                    <button id="Button1" image="hmc" size="large" label="Go To Website" onAction="Go_To_Website"/> 
+                    <checkBox id="mycheckbox" label="Toggle Reference" onAction="Macro_ChangeReferencetoR1C1"/> 
+                    </group>
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>
